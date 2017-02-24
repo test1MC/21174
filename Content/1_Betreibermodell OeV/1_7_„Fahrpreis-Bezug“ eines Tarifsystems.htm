@@ -1,34 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="Grundlagen" MadCap:lastBlockDepth="6" MadCap:lastHeight="679" MadCap:lastWidth="510" MadCap:fileTags="MyStatusFileTagSet.DO NOT TRANSLATE" MadCap:conditions="PTV_Manual.Topic&#160;Grundlagen" MadCap:ignoredWords="GE;max;TS">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="Grundlagen" MadCap:lastBlockDepth="6" MadCap:lastHeight="1229" MadCap:lastWidth="952" MadCap:fileTags="MyStatusFileTagSet.DO NOT TRANSLATE" MadCap:conditions="PTV_Manual.Topic&#160;Grundlagen" MadCap:ignoredWords="GE;max;TS">
     <head>
         <link href="../Resources/TableStyles/TableStand_nohead.css" rel="stylesheet" MadCap:stylesheetType="table" />
         <link href="../Resources/TableStyles/TableStand_withTitle.css" rel="stylesheet" MadCap:stylesheetType="table" />
         <link href="../Resources/Stylesheets/PTV_Standard.css" rel="stylesheet" />
     </head>
     <body>
-        <h4>
-            <a name="1_betreibermodell_oev_1878159914_1347424">
-            </a>
-            <a name="1_betreibermodell_oev_1878159914_66147">
-            </a>
-            <span class="gui_element">„Fahrpreis-Bezug“ </span>eines Tarifsystems</h4>
+        <h4><a name="1_betreibermodell_oev_1878159914_1347424"></a><a name="1_betreibermodell_oev_1878159914_66147"></a><span class="gui_element">„Fahrpreis-Bezug“ </span>eines Tarifsystems</h4>
         <p class="Text">Die wichtigste Eigenschaft eines Tarifsystems ist die Festlegung, wie weit eine einzelne Fahrkarte gilt. Dies kann ein einzelner Teilweg sein, d.h. es wird bei jedem Einstieg neu gelöst. Eine zweite Möglichkeit ist, dass eine Fahrkarte für aufeinander folgende Teilwege innerhalb des Tarifsystems Gültigkeit hat, man also erst dann wieder neu lösen muss, wenn man das Tarifsystem verlässt und wieder betritt. Drittens kann eine Fahrkarte für sämtliche Teilwege einer Verbindung Gültigkeit besitzen, die zum gleichen Tarifsystem gehören - also auch dann, wenn Teilwege anderer Tarifsysteme dazwischen liegen. Alle drei Fälle sind praxisrelevant.</p>
         <p class="Text">Zur Modellierung dieses Aspekts dient das zentrale Tarifsystem-Attribut <span class="gui_element">Fahrpreis-Bezug</span>, das einen der folgenden Werte annehmen kann:</p>
         <ul>
-            <LI class="List0">
-                <span class="gui_element">Jeder Teilweg einzeln</span>: Für jeden Teilweg des Tarifsystems ist eine eigene Fahrkarte zu lösen.</LI>
-            <LI class="List0">
-                <span class="gui_element">Jeweils zusammenhängende Teilwege</span>: Für jede zusammenhängende Folge von Teilwegen des Tarifsystems ist eine Fahrkarte zu lösen.</LI>
-            <LI class="List0">
-                <span class="gui_element">Alle Teilwege zusammen</span>: Für alle Teilwege zusammen, also für die ganze Fahrt, reicht eine Fahrkarte für dieses Tarifsystem aus.</LI>
+            <LI class="List0"><span class="gui_element">Jeder Teilweg einzeln</span>: Für jeden Teilweg des Tarifsystems ist eine eigene Fahrkarte zu lösen.</LI>
+            <LI class="List0"><span class="gui_element">Jeweils zusammenhängende Teilwege</span>: Für jede zusammenhängende Folge von Teilwegen des Tarifsystems ist eine Fahrkarte zu lösen.</LI>
+            <LI class="List0"><span class="gui_element">Alle Teilwege zusammen</span>: Für alle Teilwege zusammen, also für die ganze Fahrt, reicht eine Fahrkarte für dieses Tarifsystem aus.</LI>
         </ul>
         <p class="Text">Teilwege, die zu einem anderen Tarifsystem gehören, können niemals mit derselben Fahrkarte genutzt werden.</p>
-        <h5>
-            <a name="1_betreibermodell_oev_1878159914_1347431">
-            </a>
-            <a name="1_betreibermodell_oev_1878159914_48422">
-            </a>
-            <span class="gui_element">Beispiel: Tarifsystem-Eigenschaft „Fahrpreis-Bezug“</span>
+        <h5><a name="1_betreibermodell_oev_1878159914_1347431"></a><a name="1_betreibermodell_oev_1878159914_48422"></a><span class="gui_element">Beispiel: Tarifsystem-Eigenschaft „Fahrpreis-Bezug“</span>
         </h5>
         <p class="Text">Wir betrachten eine Verbindung mit vier Teilwegen, deren Verkehrssysteme Bus – Tram – Zug – Bus sind. Wir bleiben beim Beispiel der drei Tarifsysteme oben: Bus und Tram gehören zum gleichen Tarifsystem City, somit sind dieselben Fahrkartenarten für sie gültig. Das Verkehrssystem Zug gehört zum Tarifsystem Bahn.</p>
         <p class="Text">Um das Beispiel einfach zu halten, nehmen wir folgende Fahrkartenarten an:</p>
@@ -37,7 +24,7 @@
             <LI class="List0">Kurzstrecke City: 60 GE für alle Fahrten bis max. 10 min. Im Beispiel sei nur die Fahrt auf dem ersten Bus kürzer als 10 min.</LI>
             <LI class="List0">Normalpreis Bahn: 200 GE für alle Entfernungen.</LI>
         </ul>
-        <p class="Text">Auch wenn die Preisstruktur stark vereinfacht ist, zeigt dieses Beispiel deutlich auf, wie sich der Gesamtfahrpreis in Abhängigkeit vom Fahrpreis-Bezug ändert. Je nach Fahrpreis-Bezug ergeben sich folgende Fahrpreise für die Verbindung:</p>
+        <p class="Text">Auch wenn die Preisstruktur stark vereinfacht ist, zeigt dieses Beispiel deutlich auf, wie sich der Gesamtfahrpreis in Adfgsdgsgbhängigkeit vom Fahrpreis-Bezug ändert. Je nach Fahrpreis-Bezug ergeben sich folgende Fahrpreise für die Verbindung:</p>
         <table class="TableStyle-TableStand_nohead" style="width: 497px;caption-side: top;mc-table-style: url('../Resources/TableStyles/TableStand_nohead.css');" cellspacing="0">
             <col width="73px" class="TableStyle-TableStand_nohead-Column-Column1" />
             <col width="74px" class="TableStyle-TableStand_nohead-Column-Column1" />
@@ -163,8 +150,7 @@
         </ul>
         <p class="Text">Der dritte Teilweg bleibt stets außen vor, da der Zug zu einem eigenen Tarifsystem gehört.</p>
         <p class="Text">Nun wird das Beispiel um Anfangs- und Umstiegsfahrpreise ergänzt:</p>
-        <h5>
-            <span class="gui_element">Beispiel: Fahrpreis-Bezug und Anfangs- und Umstiegsfahrpreise</span>
+        <h5><span class="gui_element">Beispiel: Fahrpreis-Bezug und Anfangs- und Umstiegsfahrpreise</span>
         </h5>
         <table class="TableStyle-TableStand_withTitle" style="width: 493px;caption-side: top;mc-table-style: url('../Resources/TableStyles/TableStand_withTitle.css');" cellspacing="0">
             <col width="253px" class="TableStyle-TableStand_withTitle-Column-Column1" />
